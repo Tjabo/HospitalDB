@@ -1,10 +1,12 @@
 package com.base;
 
+import com.base.frames.MainFrame;
+
 public class Main {
 	
 	public Main() {
 		Model model = new Model();
-		View view = new View();
+		MainFrame view = new MainFrame();
 		Controller controller = new Controller(view, model);	
 	}
 
