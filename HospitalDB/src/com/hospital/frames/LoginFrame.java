@@ -11,6 +11,7 @@ import java.awt.event.ItemListener;
 import java.util.ArrayList;
 
 import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -42,6 +43,10 @@ public class LoginFrame {
 	
 	public LoginFrame() {
 		frame = new JFrame();
+		
+		ImageIcon imgIcon = new ImageIcon("res/icon.gif");
+		frame.setIconImage(imgIcon.getImage());
+		
 		frame.setTitle(TITLE);
 		frame.getContentPane().setLayout(new BorderLayout(0, 0));
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -67,6 +68,8 @@ public class GUI_test implements ActionListener {
 	// ------------------------------------------------------------------------------------------------------------------
 
 	public GUI_test() {
+		
+		
 
 		Connect();
 		SelectData();
@@ -108,6 +111,9 @@ public class GUI_test implements ActionListener {
 
 		MainWindow = new JFrame("Hospital DB");
 		//MainWindow.setSize(1700, 800);
+		
+		ImageIcon imgIcon = new ImageIcon("res/icon.gif");
+		MainWindow.setIconImage(imgIcon.getImage());
 		 
 		MainWindow.setResizable(true);
 		MainWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
