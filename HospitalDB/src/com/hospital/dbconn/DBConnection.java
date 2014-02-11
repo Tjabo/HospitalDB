@@ -49,7 +49,7 @@ public class DBConnection {
 	public void createStatement() {
 		statement = null;
 		try {			
-			statement = connection.createStatement();
+			statement =  connection.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 		} catch (SQLException e) {
 			System.err.println("Error! Could not create statement. " + e.getMessage());
 			try {

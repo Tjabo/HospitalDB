@@ -250,8 +250,13 @@ public class GUI_test implements ActionListener {
 
 			else {
 
-				RESULT.previous();
-				JOptionPane.showMessageDialog(null, "Reached Last Record");
+				RESULT.first();
+				TF_eID.setText(RESULT.getString("employeeid"));
+				TF_firstName.setText(RESULT.getString("first_name"));
+				TF_lastName.setText(RESULT.getString("last_name"));
+				TF_telephoneNR.setText(RESULT.getString("telephone_number"));
+				TF_dateofEMPL.setText(RESULT.getString("date_of_employment"));
+//				JOptionPane.showMessageDialog(null, "Reached Last Record");
 
 			}
 
@@ -279,8 +284,15 @@ public class GUI_test implements ActionListener {
 
 			else {
 
-				RESULT.next();
-				JOptionPane.showMessageDialog(null, "Reached First Record!");
+				RESULT.last();
+
+				TF_eID.setText(RESULT.getString("employeeid"));
+				TF_firstName.setText(RESULT.getString("first_name"));
+				TF_lastName.setText(RESULT.getString("last_name"));
+				TF_telephoneNR.setText(RESULT.getString("telephone_number"));
+				TF_dateofEMPL.setText(RESULT.getString("date_of_employment"));
+
+//				JOptionPane.showMessageDialog(null, "Reached First Record!");
 
 			}
 
