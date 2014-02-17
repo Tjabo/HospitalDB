@@ -204,14 +204,6 @@ public class LoginFrame {
 	public void dispose() {
 		frame.dispose();
 	}
-
-	// Debug method, sets all properties for login so I don't have to type them all over and over.
-	public void lazy() {
-		this.textFieldIP.setText("localhost");
-		this.textFieldPort.setText("3306");
-		this.textFieldUser.setText("Tjabo");
-		this.passwordField.setText("krut");		
-	}
 	
 	public String getIP(){
 		return textFieldIP.getText();
@@ -226,8 +218,7 @@ public class LoginFrame {
 	}
 	
 	public String getPassword() {		
-		return passwordField.getText();
-		//Refactor when implementing password hashing.
+		return passwordField.getText();		
 	}
 	
 	public void addListenerToButton(ActionListener listen, JButton button) {
